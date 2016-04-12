@@ -26,6 +26,7 @@ public class MovieDownloader {
         //construct the url for the omdbapi API
         String urlString = "";
         try {
+            //concatenate url
             urlString = "http://www.omdbapi.com/?s=" + URLEncoder.encode(movie, "UTF-8") + "&type=movie";
         }catch(UnsupportedEncodingException uee){
             return null;
